@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-magarwordspedia-dev-c7dca-authRole",
+      "UnauthRoleArn": "arn:aws:iam::804096467203:role/amplify-magarwordspedia-dev-c7dca-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::804096467203:role/amplify-magarwordspedia-dev-c7dca-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-magarwordspedia-dev-c7dca-deployment",
+      "UnauthRoleName": "amplify-magarwordspedia-dev-c7dca-unauthRole",
+      "StackName": "amplify-magarwordspedia-dev-c7dca",
+      "StackId": "arn:aws:cloudformation:us-east-2:804096467203:stack/amplify-magarwordspedia-dev-c7dca/23105760-4e02-11f0-913a-0adf620268e5",
+      "AmplifyAppId": "d1g0owcb9wo5ns"
+    }
+  }
+}

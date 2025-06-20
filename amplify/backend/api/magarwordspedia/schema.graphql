@@ -1,0 +1,32 @@
+type Topic @model {
+  id: ID!
+  title: String!
+  description: String
+  contributions: [Contribution] @connection(keyName: "byTopic", fields: ["id"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+}
+
+type Contribution @model {
+  id: ID!
+  content: String!
+  author: UserProfile @connection(fields: ["authorID"])
+  authorID: ID!
+  topic: Topic @connection(fields: ["topicID"])
+  topicID: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+}
+
+type UserProfile @model {
+  id: ID!
+  username: String!
+  avatar: String
+  contributions: [Contribution] @connection(keyName: "byAuthor", fields: ["id"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  _version: Int!
+}
+
